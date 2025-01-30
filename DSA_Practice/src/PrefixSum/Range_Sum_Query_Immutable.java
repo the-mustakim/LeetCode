@@ -13,7 +13,6 @@ package PrefixSum;
                 prefixSum[i] = prefixSum[i-1]+prefixSum[i]; //Time Complexity of this code is O(n)
             }
         }
-
         public int sumRange(int left, int right) {
         int rightSum = prefixSum[right];
         int leftSum = left>0 ? prefixSum[left]:0;
