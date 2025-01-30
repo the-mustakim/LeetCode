@@ -18,7 +18,6 @@ package PrefixSum;
         int leftSum = left>0 ? prefixSum[left]:0;
         return rightSum - leftSum;
         }
-
         public static void main(String args[]){
             int arr[] = {-2,0,3,-5,2,-1};
             Range_Sum_Query_Immutable obj = new Range_Sum_Query_Immutable(arr);
